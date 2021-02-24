@@ -1,9 +1,11 @@
-import './App.css';
+import { Page, Body, Footer, Navbar } from "pages/main";
 
 function App() {
-  return (
-    
-  );
+    return (
+        <Page>
+            <Body />
+        </Page>
+    );
 }
 
 export default App;
