@@ -1,9 +1,9 @@
-import { Page, Body, Footer, Navbar } from "pages/main";
+import { Page, Title } from "pages/main";
 
 function App() {
     return (
         <Page>
-            <Body />
+            <Title/>
         </Page>
     );
 }

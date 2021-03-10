@@ -1,24 +1,41 @@
 import React from "react";
+import background from "images/computer.jpg";
 
 export const Page = ({ children }: { children: any }) => {
-    return <div style={{
-        height: '100%',
-        width: '100%',
-        padding: 10,
-        textAlign: 'center'
-    }}>{children}</div>;
+    return (
+        <div style={{
+            height: "100%",
+            margin: 0,
+            textAlign: "center",
+            backgroundPosition: "center",
+            backgroundRepeat: "no-repeat",
+            backgroundSize: "cover",
+            backgroundImage: `url(${background})`,
+        }}>
+            {children}            
+        </div>
+    );
 };
 
-export const Body = () => {
-    return <h1>Body</h1>;
+export const Title = () => {
+    return(
+        <div style={{
+            fontFamily: 'Roboto'
+        }}>
+            Diseño de páginas web
+            <div>
+
+            </div>
+        </div>
+    )
 };
- 
+
 export const Navbar = () => {
     return <div></div>;
 };
 
 export const Footer = () => {
-    return <h1>Footer</h1>;
+    return <div>Footer</div>;
 };
 
-export default Body;
+export default Title;
